@@ -1,0 +1,159 @@
+% enrichment.sty
+% 
+% Style sheet for Enrichment Lesson Plans
+
+\ProvidesPackage{enrichment}[2013/02/07 MathCEP Enrichment Lesson Plan stylesheet]
+\RequirePackage[all]{xy}
+\RequirePackage[intlimits]{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
+\RequirePackage{latexsym}
+\RequirePackage{amsthm}
+\RequirePackage{verbatim}
+\RequirePackage{xspace}
+\RequirePackage{amstext}
+%\RequirePackage{subfigure}
+\RequirePackage{stmaryrd}
+\RequirePackage{tikz}
+\RequirePackage{pgflibraryplotmarks}
+\RequirePackage{multicol}
+% Changes text to use nicer fonts
+\RequirePackage{kpfonts}
+\RequirePackage{setspace}
+\RequirePackage{parskip}
+
+\RequirePackage{graphicx}
+\RequirePackage{background}
+
+\RequirePackage{hyperref}
+
+\newcommand{\vb}[1]{\ensuremath{\textbf{#1}}}
+\newcommand{\va}[1]{\ensuremath{\left\langle #1 \right\rangle}}
+\newcommand{\vc}[1]{\ensuremath{\left\langle #1 \right\rangle}}
+\newcommand{\grad}[1]{\ensuremath{\nabla #1}}
+\newcommand{\set}[1]{\ensuremath{\{ #1 \}}}
+\newcommand{\vs}{\vspace{12pt}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+
+% Theorems
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{axiom}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+% Theorems with no numbers
+\theoremstyle{plain}
+\newtheorem*{nonumthm}{Theorem}
+\newtheorem*{nonumcor}{Corollary}
+\newtheorem*{nonumlem}{Lemma}
+\newtheorem*{nonumpro}{Proposition}
+
+%\newtheorem{definition}{Definition}[chapter]
+%\newtheorem{example}{Example}[chapter]
+\newtheorem*{notation}{Notation}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+% SPACING CHANGES
+\topmargin -0.2in
+
+% CUSTOMIZE ITEMIZE (Tweak spacing)
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\itemsep2pt\parskip0pt\parsep0pt}{\temptwo}
+
+\RequirePackage{calc}
+
+%SCHOOL COLORS
+\definecolor{maroon}{RGB}{140,25,25}
+\definecolor{gold}{RGB}{255,204,51}
+
+%%%%%%%%%RECURRING HEADER FOR EACH PAGE%%%%%%%%%%%%
+% Uses Background package
+% Comes in two styles! 
+%%%% Full-color for electronic viewing: 
+\newcommand{\EtikzHead}{														
+\begin{tikzpicture}[remember picture,overlay,draw=black,ultra thick]
+    \node[yshift=-1.5cm] at (current page.north west)
+	{\begin{tikzpicture}[remember picture, overlay]
+		\draw[fill=maroon] (0,0) rectangle
+		(\paperwidth,1.5cm);
+		\node[anchor=west, xshift=.02\paperwidth, yshift=.5cm] (0,0){\color{gold}{\textbf{\large\eventname}}};
+		\node[anchor=east, xshift=0.98\paperwidth, yshift=.5cm] (0,0){\color{gold}{\large\lessontitle}};
+		\node[anchor=center, xshift=0.5\paperwidth, yshift=.5cm] (0,0){\color{gold}{\large \thepage}};
+
+       \end{tikzpicture}
+	 };
+ \end{tikzpicture}
+}
+
+%%%% Line-drawing for printing: 
+\newcommand{\PtikzHead}{														
+\begin{tikzpicture}[remember picture,overlay,draw=black,ultra thick]
+    \node[yshift=-1.5cm] at (current page.north west)
+	{\begin{tikzpicture}[remember picture, overlay]
+		\draw[black] (0,0) rectangle
+		(\paperwidth,1.5cm);
+		\node[anchor=west, xshift=.02\paperwidth, yshift=.5cm] (0,0){\color{black}{\textbf{\large\eventname}}};
+		\node[anchor=east, xshift=0.98\paperwidth, yshift=.5cm] (0,0){\color{black}{\large\lessontitle}};
+		\node[anchor=center, xshift=0.5\paperwidth, yshift=.5cm] (0,0){\color{black}{\large \thepage}};
+
+       \end{tikzpicture}
+	 };
+ \end{tikzpicture}
+}
+
+
+\SetBgPosition{current page.north west}% Select location of the header
+%%I don't know why, but when I removed the settings below the header went nuts.
+\SetBgOpacity{1.0}% Select opacity
+\SetBgAngle{0.0}% Select rotation of logo
+\SetBgScale{1.0}% Select scale factor of logo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%% %%%%%%%%% HEADER FOR THE FRONT PAGE%%%%%%%%%%%%
+% Comes in two styles!
+%%%% Full-color for electronic viewing: 
+\newcommand{\Efrontheader}{
+\NoBgThispage
+\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-2.5cm] at (current page.north west)
+	{\begin{tikzpicture}[remember picture, overlay]
+		\draw[fill=maroon] (0,0) rectangle
+		(\paperwidth,3.5cm);
+		\node[anchor=west, xshift=.02\paperwidth, yshift=1cm] (0,0){\color{gold}{\Large \eventname}};
+		\node[anchor=east,xshift=.9\paperwidth,rectangle,
+		rounded corners=10pt,inner sep=11pt, draw=maroon, 
+		fill=gold]
+		{\Large \textbf{\color{maroon}\lessontitle}};
+       \end{tikzpicture}
+	 };
+   \end{tikzpicture}
+   }
+%%%% Line-drawing for printing:
+ \newcommand{\Pfrontheader}{
+\NoBgThispage
+\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-2.5cm] at (current page.north west)
+	{\begin{tikzpicture}[remember picture, overlay]
+		\draw[black] (0,0) rectangle
+		(\paperwidth,3.5cm);
+		\node[anchor=west, xshift=.02\paperwidth, yshift=1cm] (0,0){\color{black}{\Large \eventname}};
+		\node[anchor=east,xshift=.9\paperwidth,rectangle,
+		rounded corners=10pt,inner sep=11pt, draw=black, 
+		fill=white]
+		{\Large \textbf{\color{black}\lessontitle}};
+       \end{tikzpicture}
+	 };
+   \end{tikzpicture}
+   }
+
+%%%%%%%%%%%%%%END FRONT PAGE HEADER%%%%%%%%%%%%%
