@@ -1,5 +1,7 @@
 ## Theme of the day: Data
 
+### Schedule
+
 We start with introductions of staff, directions to the restroom, and an overview of the schedule. Then move to an overview of the schedule of the camp so students know where we're going (projects on Thursday-Friday).
 
 Then a short talk on what machine learning is: Kaisa will do this in 2019. 
