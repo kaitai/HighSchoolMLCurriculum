@@ -1,0 +1,137 @@
+\documentclass[11pt]{article}
+\usepackage{./enrichment}
+\usepackage[center]{caption}
+\usepackage[margin=1in, nohead, pdftex]{geometry}
+
+\pagestyle{empty}
+\singlespacing
+
+\usepackage{wrapfig}
+
+%%%MODIFY THESE FOR EACH PROJECT AND EVENT%%%%%%%%%%%%%
+\newcommand{\eventname}{Machine Learning Camp 2019} %NAME OF THE EVENT
+\newcommand{\lessontitle}{Programming I} %NAME OF THE LESSON
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%HEADERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% For a full-color header that looks nice on a screen uncomment these two commands: 
+%\Efrontheader %Front page
+%\SetBgContents{\EtikzHead} % Subsequent pages
+
+%% For a line-drawing header that prints nicely uncomment these two commands: 
+\Pfrontheader  
+\SetBgContents{\PtikzHead} % Subsequent pages
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%{\color{blue}Add: PHiZZ module instructions. Dodecahedron, for sure, because it's a platonic solid.}
+
+\emph{Learn the basics of programming, and start working with Jupyter notebooks.} 
+
+\textbf{Instructors}: {\color{red}Any notes to add here? }
+
+\section*{Materials Needed}
+
+Jupyter Notebooks:
+\begin{itemize}
+\item 1 - Intro to Jupyter and Output
+\item 2 - Variables and Operations
+\item 3 - Lists and Loops
+\item 4 - Control Flow and Functions
+\item 5 - Vectorization (optional)
+\item 6 - Functions and Lambda Functions (optional)
+\end{itemize}
+
+\section*{Learning Objectives}
+
+1 - Intro to Jupyter and Output
+\begin{itemize}
+\item Learn how to open and run code from a Jupyter notebook.
+\item Learn to edit code and text.
+\item Learn how to use the ``print'' function for output.
+\item Learn to recognize and correct minor errors.
+\end{itemize}
+
+2 - Variables and Operations
+\begin{itemize}
+\item Understand variable assignment.
+\item Use variables to store, change, and access information.
+\item Perform operations on variables using basic arithmetic operations.
+\item Identify and correct a logic error.
+\end{itemize}
+
+3 - Lists and Loops
+\begin{itemize}
+\item Understand the advantages of using lists.
+\item Use lists to store data.
+\item Use loops to perform operations on data in lists.
+\item Select items from a list by index.
+\end{itemize}
+
+4 - Control Flow and Functions
+\begin{itemize}
+\item Understand the structure of code including ``if'' and ``else'' statements.
+\item Understand basic function calls and definitions.
+\item {\color{red} Might add to this?}
+\end{itemize}
+
+5 - Vectorization 
+\begin{itemize}
+\item Understand a vectorized arithmetic operation in contrast to a for loop
+\end{itemize}
+
+6 - Functions and Lambdas
+\begin{itemize}
+\item Revisit functions with a few more examples.
+\item Introduce lambdas, which are no-name one-line functions.
+\end{itemize}
+
+\section*{Programming I}
+
+\subsection*{Introduction}
+
+This session is intended to provide students with a basic understanding of programming. We cover a lot of material in a short amount of time, so the goal isn't for students to be experts on all of this material. We don't expect them to be ready to write their own code from scratch after this session. Instead, we hope that students will start to get comfortable reading and editing code, and be able to recognize some of the structures that they will see later.
+
+The material is presented through Jupyter notebooks. The instructions are included in the notebooks, so students can work at their own pace. Each notebook includes exercises at the end. It is not necessary that all students complete every exercise; in fact, manny will not. Rather, these exercises are intended as checks on their knowledge and opportunities for additional practice for students with prior programming experience, or who pick up the material very quickly. Some students may move on to the next notebook before the rest of the class, and this is fine.
+
+For each notebook, we start with a short introduction given by the instructor. This isn't strictly necessary, since all of the material is included in the notebook. Rather, this provides an opportunity to move all students on to the next notebook, so that the class progresses at approximately the same pace. It also provides the instructor the opportunity to emphasize the important concepts, and remind students that we aren't aiming for perfect mastery.
+
+\subsection*{1 - Intro to Jupyter and Output}
+
+Make sure that every student is able to open this notebook on their computer or iPad. Talk through the first section, ``Introduction to Jupyter,'' as a class, demonstrating how to run code, edit code and text, stop code, and restart the kernel. Go through this slowly; students should be following the same steps on their own computer.
+
+Students can then work through the sections ``Output'' and ``Exercises'' independently. As they work on these, instructors will walk around the room providing help as needed. All students should get through the first exercise, which asks them to write code to produce specific output. Once all students have reached that point, the class can move on to the next notebook. 
+
+\subsection*{2 - Variables and Operations}
+
+Have students open up this notebook, then talk briefly about variable assignment. Draw a diagram with a box corresponding to a block of memory, filled in with a value. This explanation should be very brief. After students have had some time to work through the first section, ``Variables'', talk through the last example as a class, using a diagram to show how the stored value is changed.
+
+Students can then work through the rest of the sections independently, with instructors helping as needed. All students should finish the section ``Operations.'' Once all students have started on the exercises, the class can move on to the next notebook.
+
+\subsection*{3 - Lists and Loops}
+
+Have students work through the ``Lists'' section, then work through the examples as a class, using diagrams to show how memory is manipulated.
+
+All students should get through at least the first exercise, then the class can move on to the next notebook.
+
+{\color{red} Do we want to add to this? While loops? Different syntax? More exercises?  KT: My opinion is that we should add some selection for lists material, but not while loops. We could potentially add dicts.... but maybe that's too much!}
+
+\subsection*{4 - Control Flow and Functions}
+
+Talk through the sections ``Control Flow'' and ``Functions'' as a class. Emphasize the structure of the code, and talk through it line by line.
+
+It's not essential that students get through any of these exercises, but it's good if they have some time to at least attempt them.
+
+{\color{red} Do we want to add to this? More examples? Exercises where they edit code? KT: I would like examples where they edit code, and also a quick one about multiple outputs}
+
+\subsection*{ 5 - Vectorization}
+
+This is an optional bonus notebook for students who get through the rest quickly. It covers vectorization, which is a useful tool in working with data to perform an operation on all entries in an array. 
+
+\subsection*{6 - Functions and Lambdas}
+
+This optional bonus notebook revisits functions with a few more examples and then introduces lambdas, no-name one-line functions.
+\end{document}	
