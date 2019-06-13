@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+\usepackage{./enrichment}
+\usepackage[center]{caption}
+\usepackage[margin=1in, nohead, pdftex]{geometry}
+
+\pagestyle{empty}
+\singlespacing
+
+\usepackage{wrapfig}
+
+%%%MODIFY THESE FOR EACH PROJECT AND EVENT%%%%%%%%%%%%%
+\newcommand{\eventname}{Machine Learning Camp 2019} %NAME OF THE EVENT
+\newcommand{\lessontitle}{Exploring Data} %NAME OF THE LESSON
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%HEADERS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% For a full-color header that looks nice on a screen uncomment these two commands: 
+%\Efrontheader %Front page
+%\SetBgContents{\EtikzHead} % Subsequent pages
+
+%% For a line-drawing header that prints nicely uncomment these two commands: 
+\Pfrontheader  
+\SetBgContents{\PtikzHead} % Subsequent pages
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\emph{Learn how to describe data, and some of the challenges of analyzing imperfect data.} 
+
+\textbf{Instructors}: {\color{red}Any notes to add here? }
+
+\section*{Materials Needed}
+
+\begin{itemize}
+\item Puzzles
+\item Survey on Google
+\item Worksheets on observations about data {\color{red} Some worksheets?}
+\end{itemize}
+
+\section*{Learning Objectives}
+
+Introduction to Machine Learning
+\begin{itemize}
+\item Set the stage for the camp, and get students excited about Machine Learning!
+\end{itemize}
+
+Set-up and Surveys
+\begin{itemize}
+\item Get everyone logged in to their iPad.
+\item Gather data from students to be used in later activities
+\end{itemize}
+
+Imperfect Data
+\begin{itemize}
+\item Understand the types of problems that can occur with imperfect data.
+\item Understand why cleaning data is important, but also why it can be problematic.
+\end{itemize}
+
+Summary Statistics
+\begin{itemize}
+\item Understand the different types of data: numerical, categorical,...
+\item Describe data using the mean, median, mode, standard deviation, etc.
+\item Understand the strengths and limitations of these descriptors.
+\item Students will practice using these descriptors with their own data, from the survey.
+\end{itemize}
+
+Machine Learning Prequel
+\begin{itemize}
+\item Understand our goals, what we're going to do to get there.
+\end{itemize}
+
+
+\section*{Exploring Data}
+
+The primary goals of this session are to introduce the camp and to get students some immediate experience playing with data. By the end of the session, students should have a basic understanding of what machine learning is and how it can be used, the challenges of working with data, and how to describe data using summary statistics.
+
+\subsection*{Introduction to Machine Learning}
+
+This is a short introductory talk on Machine Learning, given by some nonempty subset of $\{\text{Kaisa, Vern}\}$. The goal is to give students an idea of what machine learning is, what it can do, and what types of things we'll need to learn in order to be able to use it effectively.
+
+\subsection*{Set-up and Surveys}
+
+Get students logged in to lab computers and ipads, and have them fill out surveys.
+
+Survey draft: \url{https://forms.gle/ZGqRbCxyFmTM15K37}
+
+\subsection*{Imperfect Data}
+
+While students are doing this activity, someone will work on preparing the survey data for the next activity.
+
+Each group will be given a puzzle to assemble, but each puzzle will have several pieces missing, several duplicate pieces, and several pieces from a different puzzle. Students will be told that the puzzle pieces represent ``data.'' After students do their best to assemble the puzzle, we'll have a group discussion about the problems they ran into when trying to assemble their puzzles, and what this represents for data.
+
+We'll make sure to talk about the following points:
+\begin{itemize}
+\item Sometimes data is incomplete (missing piece)
+\item Sometimes data is duplicated (duplicate piece)
+\item Sometimes data is incorrect (piece from a different puzzle)
+\item Even if we have imperfect data, we can still figure out the big picture from the data that we do have.
+\end{itemize}
+
+Transition to a discussion about cleaning data, asking students what kinds of things we can do to fix imperfect data. Some possible suggestions:
+\begin{itemize}
+\item Just omit data that is missing, incomplete, or obviously wrong.
+\item Think about what happens if missing data takes a range of values.
+\item Change data to what we think it should be.
+\end{itemize}
+Then, talk about why we need to be careful when cleaning data. What kinds of issues can we introduce if we are overzealous with our cleaning? Why is changing data potentially a problem? How do we decide when data is ``obviously wrong''?
+
+\subsection*{Summary Statistics}
+
+{\color{red} We'll talk about various summary statistics, and students will practice using these with their own data. Need to develop worksheets/notebooks for these activities, decide what data we need for the surveys. How do we want them to do computations?}
+
+\subsection*{Machine Learning Prequel}
+
+{\color{red} Some kind of short wrap-up discussion that brings us back to the big picture. Maybe map out what they'll do for the next day and a half?}
+
+
+\end{document}	
