@@ -1,0 +1,87 @@
+\documentclass[10pt]{article}
+\usepackage{itcep, stmaryrd, tikz, pgflibraryplotmarks, multicol, pgfplots}
+\usepackage[margin=1in, nohead, pdftex]{geometry}
+
+\topmargin -0.2in
+\pagestyle{empty}
+\singlespacing
+\let\oldhat\hat
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\hat}[1]{\oldhat{\mathbf{#1}}}
+
+\definecolor{light-gray}{gray}{0.95}
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+
+\newcommand{\headerclass}{Machine Learning Camp}
+\newcommand{\headersection}{Day 2: Introduction to Classification}
+\newcommand{\headertitle}{What do you mean?}
+
+\def\C{\mathbb{C}}
+\def\R{\mathbb{R}}
+\parindent 0ex
+\begin{document}
+%==================================================================================================================================================
+\headerclass\xspace \hspace{\stretch{1}} \headersection\\
+\begin{center}{ \large \textbf{\headertitle} }\end{center}
+%==================================================================================================================================================
+
+Many a times, we want to describe or summarize data in a meaningful way. This is where descriptive statistics help us. Descriptive statistics summarize and organize data so that they can be easily understood. For example, if we had academic results for 100 students, we might be interested in the overall performance of students. We would also be interested in the overall spread of the marks, i.e., how does the performance of one student differ from the others. We will understand different types of descriptive statistics measures with an example.
+
+%\emph{Mean} or the average is a single value around which whole data can be spread out. It is the most popular way to summarize data. Mean can be calculated as some of all observations in data divided by the number of observations.
+% \begin{center}
+ %	Mean = $\frac{\sum_{i=1}^{n}x_i}{N}$ = $\frac{sum \hspace{5pt} of \hspace{5pt} all \hspace{5pt} observations}{Total \hspace{5pt} number \hspace{5pt} of \hspace{5pt} observations}$
+% \end{center}
+\vspace{0.5cm}
+Nine of your friends, along with you went to Afro Deli in Stadium Village to grab lunch after school one day and gave different orders. The prices for the ten orders come out to be 7, 10, 5, 12, 10, 26, 14, 9, 9 and 18. As a group you spent \$120 in all.
+
+\begin{enumerate}
+	
+	\item Can you represent these prices on a number line?
+	\vspace{2cm}
+	
+	\item Your friend tells you that on an \emph{average}, each of your friend spent \$ 10 on their meal. Do you think they are correct in stating that?
+	\vspace{1.5cm}
+	
+	\item Average / arithmetic mean (also written as $\bar{x}$) = $\frac{sum \hspace{5pt} of \hspace{5pt} all \hspace{5pt} observations}{Total \hspace{5pt} number \hspace{5pt} of \hspace{5pt} observations}$. Does this tally with your friend's assertion?
+	\vspace{1.5cm}
+	
+	\item Often times, knowing the mean is not enough. E.g., 5, 7 and 26 would give us a mean of 12.6. But there is a big difference between spending \$5 and \$26. To account for this big difference, we calculate something called \emph{range}. Range = Maximum value - minimum value. What will be the range here?
+	\vspace{1.5cm}
+	
+	\item There is a more common measure of spread called \emph{standard deviation}. While range and standard deviation both tell you how spread out your data is, standard deviation tells you about the spread relative to the mean. 
+	Standard deviation = $\sqrt{\frac{\sum_{i=1}^{10}(x_i - \bar{x})^2}{10}}$. Here, $\sum_{i=1}^{10}(x_i - \bar{x})^2$ is 336. What is the standard deviation?
+	\vspace{1.5cm}
+	
+	\item Can you tell which price occurs most frequently in your data? (This is called the mode.)
+	\vspace{1.5cm}
+	
+	\item What value divides the the observations into two equal parts (i.e, number of terms on the left side and the right side are the same)? (This is called the median.)
+	\vspace{1.5cm}
+	
+	If you decided not to eat out that day, and you were going to be one of the people spending \$10 on your meal, would this value (median) change?
+	\vspace{2cm}
+	
+%	\item One of the ways to combine several of these measures is by using \textit{quartiles} and drawing a box plot. After dividing your ordered dataset into two halves to find the median, find the medians of each of the halves -- those are the quartiles. 
+%		\vspace{1.5cm}
+\end{enumerate}	
+
+\emph{These are some of the measures you used above:}
+
+\vspace{0.5cm}
+\begin{enumerate}
+	\item Arithmetic Mean / Average = $\frac{\sum_{i=1}^{n}x_i}{N}$ = $\frac{sum \hspace{5pt} of \hspace{5pt} all \hspace{5pt} observations}{Total \hspace{5pt} number \hspace{5pt} of \hspace{5pt} observations}$
+	\vspace{0.3cm}
+	
+	\item Median = Mean of two middle values (even number of observations) or the middle value itself (odd case) dividing data into two equal parts each having 50\% of observations. (You sort the observations in ascending order before computing median)
+	\vspace{0.3cm}
+	\item Mode = Most frequently occuring observation
+	\vspace{0.3cm}
+	\item Range = Maximum observation - Minimum observation
+	\vspace{0.3cm}
+	\item Standard Deviation ($\sigma$) = $\sqrt{\frac{\sum_{i=1}^{N}(x_i - \bar{x})^2}{N}}$
+	\vspace{0.3cm}
+	\item Variance ($\sigma^2$) = (Standard Deviation)$^2$ = $\frac{\sum_{i=1}^{N}(x_i - \bar{x})^2}{N}$
+
+\end{enumerate}  
+
+\end{document}

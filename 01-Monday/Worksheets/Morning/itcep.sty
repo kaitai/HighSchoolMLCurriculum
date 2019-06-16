@@ -1,0 +1,111 @@
+% itcep.sty
+% 
+% A collection of shortcuts that I use - nothing interesting.
+% (Some taken from George Graetzer's book, "Math into LaTeX"
+
+\ProvidesPackage{itcep}[2008/06/16 ITCEP Shortcut Commands]
+\RequirePackage[all]{xy}
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
+\RequirePackage{latexsym}
+\RequirePackage{amsthm}
+\RequirePackage{verbatim}
+\RequirePackage{xspace}
+\RequirePackage{amstext}
+\RequirePackage{subfigure}
+\RequirePackage{mathdots}
+\RequirePackage{setspace}
+% Check if we are compiling under latex or pdflatex
+% The "final" option forces graphicx to insert the picture
+% even if I'm using [draft] with the document class.
+\ifx\pdftexversion\undefined
+ \RequirePackage[dvips,final]{graphicx}
+\else
+ \RequirePackage[pdftex,final]{graphicx}
+\fi
+
+\newcommand{\vb}[1]{\ensuremath{\textbf{#1}}}
+\newcommand{\va}[1]{\ensuremath{\left\langle #1 \right\rangle}}
+\newcommand{\grad}[1]{\ensuremath{\nabla #1}}
+\newcommand{\set}[1]{\ensuremath{\{ #1 \}}}
+\newcommand{\vs}{\vspace{12pt}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+
+% Theorems
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{axiom}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+%\newtheorem{definition}{Definition}[chapter]
+%\newtheorem{example}{Example}[chapter]
+\newtheorem*{notation}{Notation}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+% Sets 
+\newcommand{\ci}{\subseteq}% contained in with equality
+\newcommand{\nc}{\nsubseteq}% not \ci
+\newcommand{\sci}{\subset}% strictly contained in
+\newcommand{\nci}{\nc}% not \ci
+\newcommand{\cg}{\supset}% containing
+\newcommand{\ce}{\supseteq}% containing with equality
+\newcommand{\nce}{\nsupseteq}% not \ce
+\newcommand{\nin}{\notin}% not \in
+\newcommand{\es}{\varnothing}% the empty set
+\def\vv<#1>{\langle#1\rangle}% vector 
+
+% Partial ordering
+\newcommand{\nle}{\nleq}% not \leq
+
+% Font commands
+\newcommand{\tbf}{\textbf}% text bold
+\newcommand{\tit}{\textit}% text italic
+\newcommand{\tsl}{\textsl}% text slanted
+\newcommand{\tsc}{\textsc}% text small cap
+\newcommand{\ttt}{\texttt}% text typewriter
+\newcommand{\trm}{\textrm}% text roman
+\newcommand{\tsf}{\textsf}% text sans serif
+\newcommand{\tup}{\textup}% text upright
+
+\newcommand{\mbi}[1]{\textbf{ \em #1}}% math bold (lighter)
+\newcommand{\mbf}[1]{\ensuremath{\mathbf{#1}}}% math bold
+\providecommand{\mit}{\ensuremath{\mathit}}% math italic
+\newcommand{\msf}{\ensuremath{\mathsf}}% math sans serif
+\newcommand{\mrm}{\ensuremath{\mathrm}}% math roman
+\newcommand{\mtt}{\ensuremath{\mathtt}}% math typewriter
+\newcommand{\mbb}{\ensuremath{\mathtt}}% math typewriter
+
+\newcommand{\B}{\ensuremath{\boldsymbol}}
+  % Bold math symbol, use as \B{a}
+\newcommand{\C}[1]{\ensuremath{\mathcal{#1}}}
+  % Calligraphic Script - only caps, use as \C{A}
+\newcommand{\D}[1]{\ensuremath{\mathbb{#1}}}
+  % Doubled - blackboard bold - only caps, use as \D{A}
+\newcommand{\E}[1]{\ensuremath{\mathscr{#1}}}
+  % Euler Script - only caps, use as \E{A} 
+\newcommand{\F}[1]{\ensuremath{\mathfrak{#1}}}% Fraktur, use as \F{a}
+
+% Angled Brackets
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+
+% Last, but certainly not least, the Algebraic Topologist's Favorite Symbol 
+\newcommand{\del}{\partial}
+
+% Miscellaneous
+\newcommand{\nl}{\newline}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\ul}[1]{\underline{#1}}
+\providecommand{\bysame}{\makebox[3em]{\hrulefill}\thinspace}
+\newcommand{\q}{\quad}% spacing
+\newcommand{\qq}{\qquad}% more spacing
+\newcommand{\iso}{\cong}% isomorphic

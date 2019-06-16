@@ -1,0 +1,41 @@
+\documentclass[10pt]{article}
+\usepackage{itcep, stmaryrd, tikz, pgflibraryplotmarks, multicol, pgfplots}
+\usepackage[margin=1in, nohead, pdftex]{geometry}
+
+\topmargin -0.2in
+\pagestyle{empty}
+\singlespacing
+\let\oldhat\hat
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\hat}[1]{\oldhat{\mathbf{#1}}}
+
+\definecolor{light-gray}{gray}{0.95}
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+
+\newcommand{\headerclass}{Machine Learning Camp}
+\newcommand{\headersection}{Day 1: Exploring Data}
+\newcommand{\headertitle}{A Puzzling Picture}
+
+\def\C{\mathbb{C}}
+\def\R{\mathbb{R}}
+\parindent 0ex
+\begin{document}
+%==================================================================================================================================================
+\headerclass\xspace \hspace{\stretch{1}} \headersection\\
+\begin{center}{ \large \textbf{\headertitle} }\end{center}
+%==================================================================================================================================================
+
+Thinking about the puzzle activity as a metaphor for working with data, discuss the following questions.
+
+\begin{enumerate}
+\item What are some ways that data can be imperfect?
+\vfill
+\item What types of events can cause imperfect data?
+\vfill
+\item Even if data is imperfect, can it still be useful?
+\vfill
+\item What are some strategies you can use to deal with imperfect data?
+\vfill
+\end{enumerate}
+
+\end{document}

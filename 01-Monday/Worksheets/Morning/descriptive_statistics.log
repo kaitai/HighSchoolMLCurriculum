@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 JUN 2019 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  15 JUN 2019 20:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"4 - dataset_info.tex"
-(./4 - dataset_info.tex
+**descriptive_statistics.tex
+(./descriptive_statistics.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -23,33 +23,34 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
+) (./itcep.sty
+Package: itcep 2008/06/16 ITCEP Shortcut Commands
 
-! LaTeX Error: File `itcep.sty' not found.
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xypic/xy.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing:
+catcodes, docmode,
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xypic/xyrecat.tex)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/xypic/xyidioms.tex)
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+ Xy-pic version 3.8.9 <2013/10/06>
+ Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
+ Xy-pic is free software: see the User's Guide for details.
 
-Enter file name: 
-./4 - dataset_info.tex:3: Emergency stop.
-<read *> 
-         
-l.3 \usepackage
-               [margin=1in, nohead, pdftex]{geometry}^^M
-End of file on the terminal!
-
- 
-Here is how much of TeX's memory you used:
- 200 strings out of 493089
- 2186 string characters out of 6134842
- 53199 words of memory out of 5000000
- 3775 multiletter control sequences out of 15000+600000
- 3640 words of font info for 14 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 23i,0n,19p,201b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
-./4 - dataset_info.tex:3:  ==> Fatal error occurred, no output PDF file produce
-d!
-ge@p=\toks15
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen103
+\Y@c=\dimen104
+\U@c=\dimen105
+\D@c=\dimen106
+\L@c=\dimen107
+\R@c=\dimen108
+\Edge@c=\toks14
+\X@p=\dimen109
+\Y@p=\dimen110
+\U@p=\dimen111
+\D@p=\dimen112
+\L@p=\dimen113
+\R@p=\dimen114
+\Edge@p=\toks15
 \X@origin=\dimen115
 \Y@origin=\dimen116
 \X@xbase=\dimen117
@@ -802,8 +803,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen227
 \Gm@dimlist=\toks51
 )
-(./4 - dataset_info.aux)
-\openout1 = `"4 - dataset_info.aux"'.
+(./descriptive_statistics.aux)
+\openout1 = `descriptive_statistics.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
 LaTeX Font Info:    ... okay on input line 22.
@@ -939,84 +940,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-<iris_with_labels.jpg, id=4, 290.08376pt x 268.00125pt>
-File: iris_with_labels.jpg Graphic file (type jpg)
-
-<use iris_with_labels.jpg>
-Package pdftex.def Info: iris_with_labels.jpg used on input line 32.
-(pdftex.def)             Requested size: 117.3372pt x 108.405pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
-
- []
-
-
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 30--40
-[]$[]$ $[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--40
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-<dataset-original.jpg, id=5, 2714.14pt x 1770.615pt>
-File: dataset-original.jpg Graphic file (type jpg)
-
-<use dataset-original.jpg>
-Package pdftex.def Info: dataset-original.jpg used on input line 51.
-(pdftex.def)             Requested size: 166.15453pt x 108.405pt.
-
-Underfull \hbox (badness 1132) in paragraph at lines 55--56
-[]\OT1/cmr/m/n/10 The fol-low-ing mea-sure-ments were taken for each
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
-
- []
-
-
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 49--59
-[]$[]$ $[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--59
-
- []
-
 [1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./iris_
-with_labels.jpg> <./dataset-original.jpg>] (./4 - dataset_info.aux) ) 
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] (./descriptive_statistics.aux) ) 
 Here is how much of TeX's memory you used:
- 24862 strings out of 493089
- 587707 string characters out of 6134842
+ 24850 strings out of 493089
+ 587513 string characters out of 6134842
  798790 words of memory out of 5000000
- 27847 multiletter control sequences out of 15000+600000
+ 27839 multiletter control sequences out of 15000+600000
  8669 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,77p,3303b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "4 - dataset_info.pdf" (1 page, 1488439 bytes).
+ 55i,5n,77p,3307b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2015/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti10.pfb>
+Output written on descriptive_statistics.pdf (2 pages, 119453 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
